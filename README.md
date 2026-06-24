@@ -1,5 +1,6 @@
 # Semi Automated Fracture Detector (Modified Version). 2025
 **Authors: Losarcos, J. M. and Bernardi, M. I.**
+##
 **Corresponding author: Juan Manuel Losarcos, University of Illinois Chicago (jlosa@uic.edu)**  
 
 This repository contains a single MATLAB script (SAutomatedFractureDetector_v1_1.m) that implements an automated method for extracting digitized fractures from images of fractured rocks using the complex shearlet transform. The method is adapted from the manuscript titled *"An automated fracture trace detection technique using the complex shearlet transform", Prabhakaran et al. (2019).
