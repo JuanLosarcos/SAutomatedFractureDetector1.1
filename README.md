@@ -10,7 +10,7 @@ This repository contains a single MATLAB script (SAutomatedFractureDetector_v1_1
 
 - **SAutomatedFractureDetector_v1_1.m**  
   Main script that runs the full fracture extraction workflow:  
-  → Generates shearlet-based ridge ensemble from input rock images and parameters selection 
+  → Generates shearlet-based ridge ensemble from input rock images and parameter selection 
   → Applies sigmoid thresholding to filter probable fractures  
   → Segments and skeletonizes ridges  
   → Fits polylines to fracture traces  
@@ -23,13 +23,13 @@ This repository contains a single MATLAB script (SAutomatedFractureDetector_v1_1
 
 ## Folder Structure
 
-- **StudyCases/**  
+- **StudyCases**  
   Contains the three original images used in the study at different scales: local scale (1,2), outcrop scale, and regional scale; and the benchmark image used to validate the workflow + twf file
 
-- **Dependencies/**  
+- **Dependencies**  
   Contains all required MATLAB dependencies and precompiled MEX files, including:
 
-  - CoSHREM Toolbox: Please refer to : "Reisenhofer, R., Kiefer, J., and King, E. J.: Shearlet-based         detection of flame fronts, Experiments in Fluids, 57, 41, https://doi.org/10.1007/s00348-016-2128-6,     2016" for a detailed description of the CoSHREM toolbox.  
+  - CoSHREM Toolbox: Please refer to: "Reisenhofer, R., Kiefer, J., and King, E. J.: Shearlet-based         detection of flame fronts, Experiments in Fluids, 57, 41, https://doi.org/10.1007/s00348-016-2128-6,     2016" for a detailed description of the CoSHREM toolbox.  
     (http://www.math.uni-bremen.de/cda/software.html)  
   - Geom2D Toolbox  
     (https://www.mathworks.com/matlabcentral/fileexchange/7844-geom2d)  
