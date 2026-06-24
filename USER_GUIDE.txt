@@ -1,0 +1,55 @@
+# User Guide
+
+## 1. Overview
+This repository contains a modified MATLAB workflow for semi-automated fracture-trace extraction from non-georeferenced images. The workflow extends the Prabhakaran et al. (2019) complex shearlet-based fracture-detection code by adding manual scale calibration, manual north correction, guided single-image execution, and iterative parameter testing.
+
+## 2. Requirements
+- MATLAB
+- Image Processing Toolbox
+- Mapping Toolbox
+- ROI/drawline functionality
+- Included dependencies in the `Dependencies/` folder
+
+## 3. Repository structure
+- `SAutomatedFractureDetector_v1_1.m`: main script
+- `Dependencies/`: required functions
+- `StudyCases/`: images used in the manuscript
+- `README.md`: repository overview
+- `LICENSE`: GPL-3.0 license
+
+## 4. Basic usage
+1. Download or clone the repository.
+2. Open MATLAB.
+3. Set the repository folder as the current working directory.
+4. Run `SAutomatedFractureDetector_v1_1.m`.
+5. Follow the command-window prompts to select the image, define processing parameters, draw the scale reference, and, where applicable, draw the north-correction reference.
+
+## 5. Inputs
+The workflow requires:
+- An input image (`.jpg`, `.png`, `.tif`, etc.)
+- A known reference length for scale calibration
+- A known bearing for north correction, when orientation analysis is required
+- User-defined ridge-detection parameters
+
+## 6. Outputs
+The workflow generates:
+- A fracture-trace overlay on the input image
+- Fracture-length histogram
+- Length-weighted rose diagram
+- Spreadsheet with extracted trace statistics
+- Intermediate files generated during ridge detection and post-processing
+
+## 7. Reproducing manuscript examples
+### Fig. 3: Benchmark case
+Use `StudyCases/Benchmark.tif`. For the local-calibration run, draw a horizontal reference line across the full image width and assign it a length of 10 m. Draw a vertical reference line and assign it a bearing of 0°.
+
+### Fig. 4: Site-scale Lihué Calel case
+Use `StudyCases/Local.jpg`. Use the hammer length of 0.33 m for scale calibration. Use the central reference joint with a bearing of N10°E for north correction.
+
+### Fig. 5: Outcrop-scale Lihué Calel case
+Use `StudyCases/Outcrop.jpg`. Use the measured outcrop segment of approximately 1 m for scale calibration (see Fig.5 in the manuscript as a reference). North correction is not applied because the image is an outcrop-face view.
+
+### Fig. 6: Regional-scale Lihué Calel case
+Use `StudyCases/Regional.jgp`. Use the reference distance measured in Google Earth for scale calibration (see Fig.6 in the manuscript as a reference). Draw a vertical reference line aligned with image north and assign it a bearing of 0°.
+
+Note: See prameters used to analyze each case in the Table 1 of the main manuscript. 
