@@ -17,7 +17,7 @@ This repository contains a single MATLAB script (SAutomatedFractureDetector_v1_1
   → Computes orientation and length statistics  
   → Exports results to Excel and generates rose diagrams and histograms  
 
-  This version includes additional interactive tools for scale calibration and north orientation correction.
+  This version includes additional interactive tools for scale calibration and north orientation correction. For installation instructions, basic usage, input/output descriptions, reproducibility information for the manuscript examples, and known limitations, see USER_GUIDE.txt
 
 ---
 
@@ -44,7 +44,7 @@ This repository contains a single MATLAB script (SAutomatedFractureDetector_v1_1
 
 ## Notes on Modifications
 
-This script consolidates all steps into a single executable file, with simplified outputs and no dependency on shapefile generation. Additional interactive modules allow users to calibrate real-world scale and magnetic north for each image.
+This script consolidates all steps into a single executable file, with simplified outputs and no dependency on shapefile generation. Additional interactive modules allow users to calibrate real-world scale and magnetic north for each image. 
 
 ---
 
